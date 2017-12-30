@@ -1,0 +1,155 @@
+
+/* Big tablet to 1200 (widths smaller than the 1140px row */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    position: absolute;
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row { padding: 0 2%; }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body { font-size: 18px; }
+  section { padding: 60px 0; }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .steps-box { margin-top: 10px; }
+  .steps-box:last-child { 
+    padding-left: 2.75%;
+    margin-top: 40px; 
+  }
+
+  
+  .works-step { margin-bottom: 40px; }
+  .works-step:last-of-type { margin-bottom: 70px; }
+
+  
+
+  .app-screen { width: 50%; }
+
+  .icon-small { 
+    width: 15px; 
+    margin-right: 3px;
+  }
+  .city-feature { font-size: 88%;}
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .plan-price { font-size: 250%; }
+
+  .contact-form { width: 80%; }
+
+  footer { padding: 2% 2%; }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
+
+  .row,
+  .hero-text-box { padding: 0 4%; }
+  .col { 
+    width: 100%; 
+    margin: 0 0 4% 0;
+  }
+  .main-nav { display: none; }
+
+  h1 { font-size: 180%;}
+  h2 { font-size: 150%;}
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+  }
+ 
+  .app-screen { width: 40%; }
+
+  .steps-box:first-child { text-align: center;}
+
+  .works-step div {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 120%;
+    margin-top: -6px;
+  }
+
+  .works-step { margin-bottom: 30px;}
+  .works-step:last-of-type { margin-bottom: 50px; }
+
+  .btn-app img {
+    margin-right: 5px;
+    width: 150px;
+  }
+
+  .plan-details { 
+    text-align: center; 
+  }
+
+  .plan-list {
+    width: 410px;
+    margin: 0 auto; 
+  }
+
+  .plan-list li {
+    margin-left: 125px
+  }
+
+  
+
+  .box h3 {
+    text-align: center;
+  }
+  .feature-box {
+    max-width: 150px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  cite {
+    text-align: center;
+  }
+
+  .submit {
+    text-align: center;
+  }
+
+  .footer-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section { padding: 25px 0; }
+  .contact-form { width: 100%; }
+
+  .works-step div {
+    margin-top: 1px;
+  }
+  .plan-list {
+    width: 410px;
+    margin: 0 auto; 
+  }
+
+  .plan-list li {
+    margin-left: 70px
+  }
+}
