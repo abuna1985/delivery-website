@@ -55,10 +55,21 @@
   section { padding: 30px 0; }
 
   .row,
-  .hero-text-box { padding: 0 4%; }
+  .hero-text-box { 
+    padding: 0 4%; 
+  }
+
+  .hero-text-box {
+    margin-top: 40px;
+  }
   .col { 
     width: 100%; 
     margin: 0 0 4% 0;
+  }
+
+  .logo {
+    height: 75px;
+    width: auto;
   }
   .main-nav { display: none; } 
   .mobile-nav-icon {
@@ -67,26 +78,35 @@
 
   .main-nav {
     float: left;
-    margin-top: 35px;
-    margin-left: 25px;
+    width: 75%;
+    margin-top: 25px;
   }
+
+  .mobile-nav-icon {
+    margin-top: 22px;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
 
   .main-nav li {
     display: block;
+    text-align: center;
   }
 
   .main-nav li a:link,
   .main-nav li a:visited {
     display: block;
     border: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 100%;
   }
 
-  .sticky .main-nav { margin-top: 10px; }
-
   .sticky .main-nav li a:link,
-  .sticky .main-nav li a:visited { padding: 10px 0; }
+  .sticky .main-nav li a:visited { padding: 5px 0; }
   .sticky .mobile-nav-icon { margin-top: 10px; }
   .sticky .mobile-nav-icon i { color: #555; }
 
@@ -163,7 +183,7 @@
   }
 }
 
-/* Small phones from 0 to 480px */
+/* Small phones from 361 to 480px */
 @media only screen and (max-width: 480px) {
   section { padding: 25px 0; }
   .contact-form { width: 100%; }
@@ -174,4 +194,59 @@
   .plan-list li {
     margin-left: 75px;
   }
+
+  .main-nav {
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .sticky .main-nav {
+    margin-left: 35px;
+  }
+
+  .mobile-nav-icon {
+    margin-top: 15px;
+  }
+
+  .hero-text-box { margin-top: 0; }
+}
+
+/* Small phones from 341 to 360px */
+/* Samsung Galaxy s5 and s7 */
+@media only screen and (max-width: 360px) {
+  .main-nav { 
+    margin-left: 15px;
+    margin-top: 25px; 
+  }
+  .hero-text-box {
+    margin: 0;
+  }
+  .mobile-nav-icon { margin-top: 17px; }
+
+  .btn-full:link,
+  .btn-full:visited,
+  .btn-ghost:link,
+  .btn-ghost:visited {
+    padding: 10px 20px;
+  }
+
+  .btn-full:link,
+  .btn-full:visited {
+    margin-right: 3px;
+  }
+  
+}
+
+/* Small phones from 0 to 340px */
+/* iPhone SE */
+@media only screen and (max-width: 340px) {
+  .main-nav { margin-left: 10px; }
+  .sticky .main-nav { margin-left: 10px; }
+  .hero-text-box {
+    margin: 0;
+  }
+  .mobile-nav-icon { margin-top: 20px; }
+
+ 
 }
